@@ -1,0 +1,63 @@
+
+#include <stdio.h>
+#include <math.h>
+#include<locale.h>
+
+
+int main()
+{
+	setlocale(LC_ALL, "RUS");
+	int a, b, c, d, l, h, j , k,x,f;
+	
+	f = 0;
+	printf("a = ");
+	scanf_s("%d", &a);
+    printf("b = ");
+	scanf_s("%d", &b);
+	printf("c = ");
+	scanf_s("%d", &c);
+	printf("d = ");
+	scanf_s("%d", &d);
+	l = a;
+	h = b;
+	j = c;
+	k = d;
+    if (a < 0)
+	{
+		l = a *(- 1);
+	}
+	if (b < 0)
+	{
+		h = b * (-1);
+	}
+	if (c < 0)
+	{
+		j = c * (-1);
+	}
+	if (d < 0)
+	{
+		k = d * (-1);
+	}
+	x = l + h + j + k;
+
+	if ((a + b + c + d) == x)
+	{
+		f = 64;
+	}
+	if ( ((a + b + c ) == x) or ((a + b + d) == x) or ((d + b + c) == x) or ((a + d + c) == x) )
+	{
+		f = 27;
+	}
+	if ( ((a + b ) == x) or ((a + c) == x) or ((a + d) == x) or ((c + b) == x) or ((c + d) == x) or ((b + d) == x) )
+	{
+		f = 4;
+	}
+	if ((a  == x) or (c == x) or (d == x) or (b == x) )
+	{
+		f = 1;
+	}
+	printf("Количество троек положительных чисел = %d \n", f);
+		return 0;
+}
+
+
