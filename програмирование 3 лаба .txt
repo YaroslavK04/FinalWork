@@ -7,28 +7,28 @@
 int main()
 {
 	setlocale(LC_ALL, "RUS");
-	int a, b, c, d, l, h, j , k,x,f;
+	int a1, b1, c, d, l, h, j , k,x,f;
 	
 	f = 0;
-	printf("a = ");
-	scanf_s("%d", &a);
+	printf("a1 = ");
+	scanf_s("%d", &a1);
     printf("b = ");
-	scanf_s("%d", &b);
+	scanf_s("%d", &b1);
 	printf("c = ");
 	scanf_s("%d", &c);
 	printf("d = ");
 	scanf_s("%d", &d);
-	l = a;
-	h = b;
+	l = a1;
+	h = b1;
 	j = c;
 	k = d;
     if (a < 0)
 	{
-		l = a *(- 1);
+		l = a1 *(- 1);
 	}
-	if (b < 0)
+	if (b1 < 0)
 	{
-		h = b * (-1);
+		h = b1 * (-1);
 	}
 	if (c < 0)
 	{
@@ -40,19 +40,19 @@ int main()
 	}
 	x = l + h + j + k;
 
-	if ((a + b + c + d) == x)
+	if ((a1 + b1 + c + d) == x)
 	{
 		f = 64;
 	}
-	if ( ((a + b + c ) == x) or ((a + b + d) == x) or ((d + b + c) == x) or ((a + d + c) == x) )
+	if ( ((a1 + b1 + c ) == x) or ((a1 + b1 + d) == x) or ((d + b1 + c) == x) or ((a1 + d + c) == x) )
 	{
 		f = 27;
 	}
-	if ( ((a + b ) == x) or ((a + c) == x) or ((a + d) == x) or ((c + b) == x) or ((c + d) == x) or ((b + d) == x) )
+	if ( ((a1 + b1 ) == x) or ((a1 + c) == x) or ((a1 + d) == x) or ((c + b1) == x) or ((c + d) == x) or ((b1 + d) == x) )
 	{
 		f = 4;
 	}
-	if ((a  == x) or (c == x) or (d == x) or (b == x) )
+	if ((a1  == x) or (c == x) or (d == x) or (b1 == x) )
 	{
 		f = 1;
 	}
