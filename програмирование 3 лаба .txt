@@ -7,7 +7,17 @@
 int main()
 {
 	setlocale(LC_ALL, "RUS");
-	int a1, b1, c, d, l, h, j , k,x,f;
+	int 
+a1, (Эта переенная че-то выводит)
+b1,
+c, 
+d, (Эту я не знаю)
+l, 
+h, 
+j , 
+k,
+x,(А это тут чисто по приколу)
+f;
 	
 	f = 0;
 	printf("a1 = ");
